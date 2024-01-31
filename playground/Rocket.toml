@@ -1,3 +1,5 @@
+[default]
+secret_key = "qi2poJU43K7Jn0GIDuPesNZtJCKb50XDIC5eI4C8tTU=" # Only used for testing!
 
 [default.tls]
 certs = "../cert/rsa_sha256_cert.pem"
