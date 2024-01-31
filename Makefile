@@ -3,8 +3,13 @@ CA_SUBJECT=/C=US/ST=CA/O=Rocket CA/CN=VioletKeys Root CA
 SUBJECT=/C=US/ST=CA/O=VioletKeys/CN=localhost
 ALT=DNS:localhost
 
-run: playground/target/debug/playground cert
-	echo "done"
+build: playground/target/debug/playground cert
+
+run: build
+	cd playground;cargo run
+
+test: build
+	cd playground;cargo test
 
 playground/target/debug/playground: playground/src/main.rs
 	cd playground;cargo build

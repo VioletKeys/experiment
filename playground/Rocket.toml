@@ -1,0 +1,32 @@
+
+[default.tls]
+certs = "../cert/rsa_sha256_cert.pem"
+key = "../cert/rsa_sha256_key.pem"
+
+[default.tls.mutual]
+ca_certs = "../cert/ca_cert.pem"
+mandatory = false
+
+[rsa_sha256.tls]
+certs = "../cert/rsa_sha256_cert.pem"
+key = "../cert/rsa_sha256_key.pem"
+
+[ecdsa_nistp256_sha256_pkcs8.tls]
+certs = "../cert/ecdsa_nistp256_sha256_cert.pem"
+key = "../cert/ecdsa_nistp256_sha256_key_pkcs8.pem"
+
+[ecdsa_nistp384_sha384_pkcs8.tls]
+certs = "../cert/ecdsa_nistp384_sha384_cert.pem"
+key = "../cert/ecdsa_nistp384_sha384_key_pkcs8.pem"
+
+[ecdsa_nistp256_sha256_sec1.tls]
+certs = "../cert/ecdsa_nistp256_sha256_cert.pem"
+key = "../cert/ecdsa_nistp256_sha256_key_sec1.pem"
+
+[ecdsa_nistp384_sha384_sec1.tls]
+certs = "../cert/ecdsa_nistp384_sha384_cert.pem"
+key = "../cert/ecdsa_nistp384_sha384_key_sec1.pem"
+
+[ed25519.tls]
+certs = "../cert/ed25519_cert.pem"
+key = "../cert/ed25519_key.pem"
